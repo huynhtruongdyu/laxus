@@ -8,14 +8,11 @@ import {
   AiOutlineAppstore,
   AiOutlineHome,
 } from "react-icons/ai";
+import { FaRegUser, FaUser } from "react-icons/fa";
+import { IoBookmark, IoBookmarkOutline } from "react-icons/io5";
 import { LuBookMinus } from "react-icons/lu";
-import {
-  RiAccountCircleFill,
-  RiAccountCircleLine,
-  RiBookOpenFill,
-  RiSearchFill,
-  RiSearchLine,
-} from "react-icons/ri";
+import { RiBookOpenFill } from "react-icons/ri";
+
 import { TbBrandBlogger } from "react-icons/tb";
 
 import { BiLogoBlogger } from "react-icons/bi";
@@ -89,11 +86,11 @@ const Navbar = () => {
         />
         <NavItem
           className="navbar__item navbar__item--5"
-          href="/search"
-          name="Search"
-          isActive={equalsIgnoringCase(pathname, "/search")}
-          iconOutline={<RiSearchLine size={"1.2rem"} />}
-          iconFilled={<RiSearchFill size={"1.4rem"} />}
+          href="/bookmark"
+          name="Bookmark"
+          isActive={equalsIgnoringCase(pathname, "/bookmark")}
+          iconOutline={<IoBookmarkOutline size={"1.2rem"} />}
+          iconFilled={<IoBookmark size={"1.4rem"} />}
         />
       </div>
       <div className="navbar__container navbar__container--bottom">
@@ -102,8 +99,8 @@ const Navbar = () => {
           href="/about"
           name="About"
           isActive={equalsIgnoringCase(pathname, "/about")}
-          iconOutline={<RiAccountCircleLine size={"1.2rem"} />}
-          iconFilled={<RiAccountCircleFill size={"1.4rem"} />}
+          iconOutline={<FaRegUser size={"1.2rem"} />}
+          iconFilled={<FaUser size={"1.4rem"} />}
         />
       </div>
     </nav>

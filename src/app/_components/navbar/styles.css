@@ -33,10 +33,16 @@
 
   border-radius: var(--border-radius);
   outline: none;
+  opacity: 0.5;
+}
+
+.navbar .navbar__item small {
+  font-size: 70%;
 }
 
 .navbar .navbar__item.active {
   background-color: var(--background-color-nav-item);
+  opacity: 1;
 }
 
 .navbar .navbar__item.active > small {
@@ -60,7 +66,7 @@
     display: none;
   }
   .navbar .navbar__item {
-    aspect-ratio: unset;
+    /* aspect-ratio: unset; */
     height: 100%;
   }
 

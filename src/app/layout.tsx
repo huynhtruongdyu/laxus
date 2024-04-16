@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Be_Vietnam_Pro } from "next/font/google";
-import "./globals.css";
+import { Be_Vietnam_Pro } from "next/font/google";
 import { Header, Navbar } from "./_components";
+import "./globals.css";
 
 const inter = Be_Vietnam_Pro({ weight: "300", subsets: ["latin"] });
 
