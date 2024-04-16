@@ -1,3 +1,31 @@
+:root {
+  /* Variables */
+  --color-black: #000000;
+  --color-black-1: #202020;
+  --color-black-2: #272727;
+
+  --color-white: #fff;
+  --color-white-1: #f3f3f3;
+  --color-white-2: #f9f9f9;
+
+  --border-radius: 0.5em;
+
+  /* Elements */
+  --background-color: var(--color-white-1);
+  --backgound-color-page-content: var(--color-white-2);
+  --text-color: black;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: var(--color-black-1);
+    --backgound-color-page-content: var(--color-black-2);
+    --text-color: white;
+  }
+  html {
+    color-scheme: dark;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -8,20 +36,39 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 body {
   min-width: 320px;
-  max-height: 100svh;
+  height: 100svh;
+  background-color: unset;
+}
+header {
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  display: flex;
+  height: calc(100svh - 50px);
+}
+main > nav {
+  width: 70px;
+}
+main > article {
+  flex: 1;
+  border-top-left-radius: var(--border-radius);
+  padding: 1rem;
+  background-color: var(--backgound-color-page-content);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
