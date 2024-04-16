@@ -38,6 +38,45 @@
 .navbar .navbar__item.active {
   background-color: var(--background-color-nav-item);
 }
+
 .navbar .navbar__item.active > small {
   display: none;
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    flex-direction: row;
+  }
+  .navbar > .navbar__container {
+    flex-direction: row;
+  }
+  .navbar > .navbar__container.navbar__container--top {
+    flex: 1;
+    justify-content: space-around;
+  }
+
+  .navbar > .navbar__container.navbar__container--bottom {
+    /* flex: 1; */
+    display: none;
+  }
+  .navbar .navbar__item {
+    aspect-ratio: unset;
+    height: 100%;
+  }
+
+  .navbar .navbar__item:nth-child(1) {
+    order: 1;
+  }
+  .navbar .navbar__item:nth-child(2) {
+    order: 2;
+  }
+  .navbar .navbar__item:nth-child(3) {
+    order: 5;
+  }
+  .navbar .navbar__item:nth-child(4) {
+    order: 4;
+  }
+  .navbar .navbar__item:nth-child(5) {
+    order: 3;
+  }
 }

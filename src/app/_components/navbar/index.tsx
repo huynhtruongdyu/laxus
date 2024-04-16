@@ -8,7 +8,16 @@ import {
   AiOutlineAppstore,
   AiOutlineHome,
 } from "react-icons/ai";
-import { RiAccountCircleFill, RiAccountCircleLine } from "react-icons/ri";
+import {
+  RiAccountCircleFill,
+  RiAccountCircleLine,
+  RiBloggerFill,
+  RiBloggerLine,
+  RiBookOpenFill,
+  RiSearch2Fill,
+  RiSearch2Line,
+} from "react-icons/ri";
+import { LuBookMinus } from "react-icons/lu";
 
 import "./styles.css";
 
@@ -48,18 +57,42 @@ const Navbar = () => {
         <NavItem
           href="/"
           name="Home"
-          className="navbar__item"
+          className="navbar__item navbar__item--1"
           isActive={equalsIgnoringCase(pathname, "/")}
           iconOutline={<AiOutlineHome size={"1.2rem"} />}
           iconFilled={<AiFillHome size={"1.4rem"} />}
         />
         <NavItem
-          className="navbar__item"
+          className="navbar__item navbar__item--2"
           href="/apps"
           name="Apps"
           isActive={equalsIgnoringCase(pathname, "/apps")}
           iconOutline={<AiOutlineAppstore size={"1.2rem"} />}
           iconFilled={<AiFillAppstore size={"1.4rem"} />}
+        />
+        <NavItem
+          className="navbar__item navbar__item--3"
+          href="/blogs"
+          name="Blog"
+          isActive={equalsIgnoringCase(pathname, "/blogs")}
+          iconOutline={<RiBloggerLine size={"1.2rem"} />}
+          iconFilled={<RiBloggerFill size={"1.4rem"} />}
+        />
+        <NavItem
+          className="navbar__item navbar__item--4"
+          href="/course"
+          name="Course"
+          isActive={equalsIgnoringCase(pathname, "/course")}
+          iconOutline={<LuBookMinus size={"1.2rem"} />}
+          iconFilled={<RiBookOpenFill size={"1.4rem"} />}
+        />
+        <NavItem
+          className="navbar__item navbar__item--5"
+          href="/search"
+          name="Search"
+          isActive={equalsIgnoringCase(pathname, "/search")}
+          iconOutline={<RiSearch2Line size={"1.2rem"} />}
+          iconFilled={<RiSearch2Fill size={"1.4rem"} />}
         />
       </div>
       <div className="navbar__container navbar__container--bottom">
