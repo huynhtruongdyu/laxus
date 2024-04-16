@@ -8,16 +8,17 @@ import {
   AiOutlineAppstore,
   AiOutlineHome,
 } from "react-icons/ai";
+import { LuBookMinus } from "react-icons/lu";
 import {
   RiAccountCircleFill,
   RiAccountCircleLine,
-  RiBloggerFill,
-  RiBloggerLine,
   RiBookOpenFill,
-  RiSearch2Fill,
-  RiSearch2Line,
+  RiSearchFill,
+  RiSearchLine,
 } from "react-icons/ri";
-import { LuBookMinus } from "react-icons/lu";
+import { TbBrandBlogger } from "react-icons/tb";
+
+import { BiLogoBlogger } from "react-icons/bi";
 
 import "./styles.css";
 
@@ -75,8 +76,8 @@ const Navbar = () => {
           href="/blogs"
           name="Blog"
           isActive={equalsIgnoringCase(pathname, "/blogs")}
-          iconOutline={<RiBloggerLine size={"1.2rem"} />}
-          iconFilled={<RiBloggerFill size={"1.4rem"} />}
+          iconOutline={<TbBrandBlogger size={"1.2rem"} />}
+          iconFilled={<BiLogoBlogger size={"1.4rem"} />}
         />
         <NavItem
           className="navbar__item navbar__item--4"
@@ -91,8 +92,8 @@ const Navbar = () => {
           href="/search"
           name="Search"
           isActive={equalsIgnoringCase(pathname, "/search")}
-          iconOutline={<RiSearch2Line size={"1.2rem"} />}
-          iconFilled={<RiSearch2Fill size={"1.4rem"} />}
+          iconOutline={<RiSearchLine size={"1.2rem"} />}
+          iconFilled={<RiSearchFill size={"1.4rem"} />}
         />
       </div>
       <div className="navbar__container navbar__container--bottom">

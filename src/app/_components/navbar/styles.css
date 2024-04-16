@@ -64,7 +64,7 @@
     height: 100%;
   }
 
-  /* .navbar .navbar__item:nth-child(1) {
+  .navbar .navbar__item:nth-child(1) {
     order: 1;
   }
   .navbar .navbar__item:nth-child(2) {
@@ -78,5 +78,5 @@
   }
   .navbar .navbar__item:nth-child(5) {
     order: 3;
-  } */
+  }
 }
