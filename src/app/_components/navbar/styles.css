@@ -32,8 +32,12 @@
   aspect-ratio: 1/1;
 
   border-radius: var(--border-radius);
+  outline: none;
 }
 
 .navbar .navbar__item.active {
   background-color: var(--background-color-nav-item);
+}
+.navbar .navbar__item.active > small {
+  display: none;
 }
