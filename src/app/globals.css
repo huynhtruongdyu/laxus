@@ -3,12 +3,13 @@
   --color-black: #000000;
   --color-black-1: #202020;
   --color-black-2: #272727;
-
   --color-white: #fff;
   --color-white-1: #f3f3f3;
   --color-white-2: #f9f9f9;
 
   --border-radius: 0.5em;
+  --padding: 0.5em;
+  --gap: 0, 5em;
 
   /* Elements */
   --background-color: var(--color-white-1);

@@ -1,0 +1,22 @@
+.navbar {
+  padding: var(--padding);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.navbar > .navbar__container--top {
+  flex: 1;
+}
+
+.navbar > .navbar__container--bottom {
+  height: fit-content;
+}
+
+.navbar .navbar__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
