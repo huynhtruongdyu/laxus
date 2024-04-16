@@ -94,14 +94,14 @@ const Navbar = () => {
         />
       </div>
       <div className="navbar__container navbar__container--bottom">
-        <NavItem
+        {/* <NavItem
           className="navbar__item"
           href="/about"
           name="About"
           isActive={equalsIgnoringCase(pathname, "/about")}
           iconOutline={<FaRegUser size={"1.2rem"} />}
           iconFilled={<FaUser size={"1.4rem"} />}
-        />
+        /> */}
       </div>
     </nav>
   );

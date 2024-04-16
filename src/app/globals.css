@@ -16,6 +16,7 @@
   --border-radius: 0.5em;
   --padding: 0.5em;
   --gap: 0.5em;
+  --gap-1: 1em;
 
   /* ELEMENTS */
   --min-width: 320px;
@@ -40,6 +41,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+*[role="button"] {
+  cursor: pointer;
 }
 
 html,

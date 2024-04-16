@@ -1,0 +1,16 @@
+.header__actionbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  /* margin-right: 1rem; */
+  gap: var(--gap-1);
+}
+
+.header__actionbar__item {
+  opacity: 0.5;
+}
+
+.header__actionbar__item.active {
+  opacity: 1;
+}
