@@ -8,7 +8,15 @@ const About = () => {
         <div className="about-hero__background"></div>
         <div className="about-hero__content glass">
           <h1 title={`Console.WriteLine("hello world")`}>
-            i'm <AppTypeWritter texts={["a backend developer"]} />
+            hello world, <br />
+            <AppTypeWritter
+              texts={[
+                "my name is Aaron",
+                "i'm a backend developer ",
+                "i love to learn new things",
+                "hope you like my site",
+              ]}
+            />
           </h1>
         </div>
       </div>

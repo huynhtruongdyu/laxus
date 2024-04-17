@@ -11,7 +11,7 @@ const AppTypeWritter = ({ texts }: AppTypeWritterProps) => {
     setTypewriter(
       new Typewriter("#elTypewritterId", {
         loop: true,
-        delay: 3000,
+        delay: 100,
         strings: texts,
         autoStart: true,
       })
