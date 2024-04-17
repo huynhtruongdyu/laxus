@@ -92,7 +92,6 @@ main > nav {
 main > article {
   flex: 1;
   border-top-left-radius: var(--border-radius);
-  padding: 1rem;
   background-color: var(--background-color-page-content);
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
@@ -122,4 +121,17 @@ a {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 800px) {
+}
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  /* border-radius: 20px; */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }

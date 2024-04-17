@@ -1,0 +1,92 @@
+:root {
+  --hero-height: 300px;
+}
+
+.about-container {
+}
+.about-container .about-hero {
+  height: var(--hero-height);
+
+  position: relative;
+}
+.about-hero__background {
+  height: 100%;
+
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.about-hero__content {
+  padding: var(--padding);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 200px;
+  width: 90%;
+
+  border-radius: var(--border-radius);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-hero__content h1 {
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+.about-container .about-content {
+  padding: var(--padding);
+}
+
+.about-content .about-section {
+}
+
+@media (prefers-color-scheme: dark) {
+  .about-hero__background {
+    /* background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    ); */
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a6899e1b-4c04-49ce-a9b7-ac145e0187b6/dez9zvf-c3e75562-fc00-4b01-938e-488ec2ce52ea.png/v1/fill/w_1280,h_540,q_80,strp/glassmorphism____wallpaper_ultrawide_2k_by_alossgurke_dez9zvf-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTQwIiwicGF0aCI6IlwvZlwvYTY4OTllMWItNGMwNC00OWNlLWE5YjctYWMxNDVlMDE4N2I2XC9kZXo5enZmLWMzZTc1NTYyLWZjMDAtNGIwMS05MzhlLTQ4OGVjMmNlNTJlYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7nV0n4ZnWQUgcWDzwuUqkkeETGAWgVWKF0WBvcpogzY);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  :root {
+    --hero-height: 200px;
+  }
+  .about-hero__content {
+    height: calc(var(--hero-height) / 2);
+  }
+  .about-hero__content * {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about-hero__content {
+    width: 100%;
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+}
