@@ -10,11 +10,7 @@ const About = () => {
           <h1 title={`Console.WriteLine("hello world")`}>
             hello world, <br />
             <AppTypeWritter
-              texts={[
-                "my name is Aaron",
-                "i'm a backend developer ",
-                "i love to learn new things",
-              ]}
+              texts={["my name is Aaron", "i'm a backend developer "]}
             />
           </h1>
         </div>
