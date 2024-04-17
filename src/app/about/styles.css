@@ -58,6 +58,7 @@
 
 .about-content .about-section:nth-child(1) {
   height: calc(100svh - var(--hero-height) - 50px);
+  min-height: fit-content;
 }
 
 @media (prefers-color-scheme: dark) {
