@@ -17,6 +17,7 @@ const About = () => {
         <section className="about-section about-section__info">
           Common Info
         </section>
+        <hr />
         <section className="about-section about-section__timeline">
           Timeline
         </section>

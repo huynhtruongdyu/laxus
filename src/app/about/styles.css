@@ -48,10 +48,15 @@
 }
 
 .about-container .about-content {
-  padding: var(--padding);
+  /* padding: var(--padding); */
 }
 
 .about-content .about-section {
+  height: calc(100svh - 50px - 70px);
+}
+
+.about-content .about-section:nth-child(1) {
+  height: calc(100svh - var(--hero-height) - 50px);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -79,6 +84,10 @@
   }
   .about-hero__content * {
     font-size: 100%;
+  }
+
+  .about-content .about-section:nth-child(1) {
+    height: calc(100svh - var(--hero-height) - 50px - 70px);
   }
 }
 
