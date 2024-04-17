@@ -14,7 +14,6 @@ const About = () => {
                 "my name is Aaron",
                 "i'm a backend developer ",
                 "i love to learn new things",
-                "hope you like my site",
               ]}
             />
           </h1>
