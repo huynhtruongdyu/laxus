@@ -3,8 +3,9 @@
 const WebBuilder = () => {
   return (
     <div>
-      <div></div>
-      <div></div>
+      <div>left</div>
+      <div>center</div>
+      <div>right</div>
     </div>
   );
 };

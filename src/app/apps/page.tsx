@@ -1,14 +1,18 @@
-"use client";
-import { useClickOutside } from "@/core/hooks";
-import React, { useRef } from "react";
+import { AppCard } from "./_components";
 
 const Apps = () => {
-  const divRef = useRef<any>(null);
-
-  const setRef = useClickOutside(() => {
-    console.log("is outside");
-  });
-  return <div ref={setRef}>Apps</div>;
+  return (
+    <div>
+      <h1>Apps</h1>
+      <AppCard />
+      <br />
+      <AppCard />
+      <br />
+      <AppCard />
+      <br />
+      <AppCard />
+    </div>
+  );
 };
 
 export default Apps;
