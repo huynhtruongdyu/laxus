@@ -1,4 +1,4 @@
-import React from "react";
+import AppTypeWritter from "@/core/components/modules/typewriter";
 import "./styles.css";
 
 const About = () => {
@@ -8,14 +8,13 @@ const About = () => {
         <div className="about-hero__background"></div>
         <div className="about-hero__content glass">
           <h1 title={`Console.WriteLine("hello world")`}>
-            i'm a <span>backend developer</span>
+            i'm <AppTypeWritter texts={["a backend developer"]} />
           </h1>
         </div>
       </div>
       <div className="about-content">
-        {/* Multiple Typing Text Animation */}
         <section className="about-section about-section__info">
-          Common Info
+          <h1>Common Info</h1>
         </section>
         <hr />
         <section className="about-section about-section__timeline">
