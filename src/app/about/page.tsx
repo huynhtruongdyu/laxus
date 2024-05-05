@@ -8,19 +8,19 @@ const About = () => {
       <div className="about-hero">
         <div className="about-hero__background"></div>
         <div className="about-hero__content glass">
-          <h1 title={`Console.WriteLine("hello world")`}>
-            hello world
-            <br />
+          <p title={`Console.WriteLine("hello world")`}>hello world</p>
+
+          <p>
             <AppTypeWritter
               texts={["my name is Duy", "i'm a web development"]}
             />
-          </h1>
+          </p>
         </div>
       </div>
       <div className="about-content">
         <section className="about-section about-section__info">
           <div className="container">
-            <h1>about</h1>
+            <h1 className="underline">about</h1>
             <p>
               i'm a backend web development enthusiast from VN, driven to create
               innovative and user-focused web experiences, a quick study when it
@@ -32,13 +32,13 @@ const About = () => {
         </section>
         <section className="about-section about-section__skills">
           <div className="container">
-            <h2 className="underline">skills</h2>
+            <h2>skills</h2>
             <div></div>
           </div>
         </section>
         <section className="about-section about-section__timeline">
           <div className="container">
-            <h2 className="underline">work experiences</h2>
+            <h2>work experiences</h2>
             <div className="jobs">
               <div className="job">
                 <h3>fullstack developer</h3>

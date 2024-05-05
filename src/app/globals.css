@@ -124,7 +124,7 @@ a {
   main > nav {
     min-width: var(--min-width);
     width: 100vw;
-    height: 50px;
+    height: 70px;
     overflow: hidden;
   }
   main > article {
