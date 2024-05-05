@@ -48,17 +48,27 @@
   mix-blend-mode: screen;
 }
 
-.about-container .about-content {
-  /* padding: var(--padding); */
-}
+/* .about-container .about-content {
+  padding: var(--padding);
+} */
 
 .about-content .about-section {
-  height: calc(100svh - 50px - 70px);
+  min-height: fit-content;
+  /* height: calc(100svh - 50px); */
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
 }
 
-.about-content .about-section:nth-child(1) {
-  height: calc(100svh - var(--hero-height) - 50px);
-  min-height: fit-content;
+.about-content .about-section.about-section__skills {
+  /* text-align: center; */
+}
+
+.about-content .about-section.about-section__timeline .jobs {
+  /* text-align: center; */
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,7 +88,7 @@
 }
 
 @media screen and (max-width: 420px) {
-  :root {
+  /* :root {
     --hero-height: 200px;
   }
   .about-hero__content {
@@ -90,7 +100,7 @@
 
   .about-content .about-section:nth-child(1) {
     height: calc(100svh - var(--hero-height) - 50px - 70px);
-  }
+  } */
 }
 
 @media screen and (max-width: 800px) {
@@ -99,5 +109,13 @@
     border-radius: 0;
     border-left: 0;
     border-right: 0;
+  }
+
+  .about-content .about-section.about-section__timeline .jobs {
+    /* text-align: center; */
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 }

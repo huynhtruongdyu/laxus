@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro } from "next/font/google";
+import { Be_Vietnam_Pro, Inter } from "next/font/google";
 import { Header, Navbar } from "./_components";
 import "./globals.css";
 
-const inter = Be_Vietnam_Pro({ weight: "300", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",

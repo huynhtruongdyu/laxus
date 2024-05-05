@@ -1,3 +1,4 @@
+@import "../asssets/css/utilities.css";
 :root {
   /* VARIABLES */
   /* Breakpoints */
@@ -13,6 +14,7 @@
   --color-white-2: #f9f9f9;
   --color-gray-1: #454545;
   /* Spacing */
+  --border-color: var(--color-black);
   --border-radius: 0.5em;
   --padding: 0.5em;
   --gap: 0.5em;
@@ -31,6 +33,7 @@
     --background-color-page-content: var(--color-black-2);
     --background-color-nav-item: var(--color-gray-1);
     --text-color: white;
+    --border-color: var(--color-white);
   }
   html {
     color-scheme: dark;
@@ -121,7 +124,7 @@ a {
   main > nav {
     min-width: var(--min-width);
     width: 100vw;
-    height: 70px;
+    height: 50px;
     overflow: hidden;
   }
   main > article {
@@ -144,4 +147,12 @@ a {
   /* border-radius: 20px; */
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+hr {
+  width: 30%;
+}
+
+h1 {
+  font-size: 2em;
 }
