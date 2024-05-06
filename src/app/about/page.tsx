@@ -1,6 +1,7 @@
 import AppTypeWritter from "@/core/components/modules/typewriter";
 import Image from "next/image";
 import "./styles.css";
+import SkillCard from "@/app/about/_components/skill-card";
 
 const About = () => {
   return (
@@ -18,8 +19,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-content">
-        <section className="about-section about-section__info">
-          <div className="container">
+        <section className="about-section about-section__info container">
             <h1 className="underline">about</h1>
             <p>
               i'm a backend web development enthusiast from VN, driven to create
@@ -28,12 +28,38 @@ const About = () => {
               find the perfect solution. Learning is my daily fuel, keeping me
               on the cutting edge and excited for every new project.
             </p>
-          </div>
         </section>
         <section className="about-section about-section__skills">
           <div className="container">
             <h2>skills</h2>
-            <div></div>
+            <div className="skills">
+              <h3 className="skills__title">frontend</h3>
+              <div className="skills__container">
+                <span className="skill__item">HTML & CSS</span>
+                <span className="skill__item">React</span>
+                <span className="skill__item">React Native</span>
+                <span className="skill__item">Angular</span>
+                <span className="skill__item">Vue</span>
+              </div>
+            </div>
+            <div className="skills">
+              <h3 className="skills__title">backend</h3>
+              <div className="skills__container">
+                <span className="skill__item">C#</span>
+                <span className="skill__item">ASP.NET Core</span>
+                <span className="skill__item">Javascript</span>
+                <span className="skill__item">Golang</span>
+              </div>
+            </div>
+            <div className="skills">
+              <h3 className="skills__title">orthers</h3>
+              <div className="skills__container">
+                <span className="skill__item">Hangfire</span>
+                <span className="skill__item"></span>
+                <span className="skill__item">SignalR</span>
+                <span className="skill__item">SocketIO</span>
+              </div>
+            </div>
           </div>
         </section>
         <section className="about-section about-section__timeline">
